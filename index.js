@@ -1,38 +1,45 @@
+
 const telebeler = [
+
+     {
+        fin:"423ER321",
+        Ad:"Meherrem",
+        Soyad:"Dadashov",
+        Tevellud:2004,
+        isStudent: true,
+       
+    },   
     {
-        ad:"Meherrem",
-        soyad:"Dadashov",
-        tevellud:2004,
-        isStudent:true,
-        telebeninYasiniHesabla:function(){
-            return new DataTransfer().getFullYear()-this.tevellud
-            
-        }
+        fin:"931FG572",
+        Ad:"Murad",
+        Soyad:"Ismayilov",
+        Tevellud:2008,
+        isStudent:false,
+        
     },
     {
-        ad:"Meherrem",
-        soyad:"Dadashov",
-        tevellud:2004,
+        fin:"123ER321",
+        Ad:"Gunay",
+        Soyad:"Mahmutov",
+        Tevellud:2001,
         isStudent:true,
-        telebeninYasiniHesabla:function(){
-            return new DataTransfer().getFullYear()-this.tevellud
-            
-        }
-    },
-    {
-        ad:"Gunay",
-        soyad:"Mahmutov",
-        tevellud:2001,
-        isStudent:true,
-        telebeninYasiniHesabla:function(){
-            return new DataTransfer().getFullYear()-this.tevellud
-            
-        }
+      
     }
 
+
+   
 ]
 
-const tbodyTeqi = document.querySelector("tbody")
-for(let i=0; i<telebeler.lenght; i++){
-    console.log(telebeler[i].ad)
+for(i=0;  i<telebeler.length ; i++){
+    document.querySelector("tbody").innerHTML += `<tr>
+    <th scope="row">${telebeler[i].fin}</th>
+    <td>${telebeler[i].Ad}</td>
+    <td>${telebeler[i].Soyad}</td>
+    <td>${telebeler[i].Tevellud}</td>
+    <td>${telebeler[i].isStudent ? "Telebe tehsil alir" : "Telebe mezundur"}</td>
+    <td><i class="bi bi-pencil-square"></i></td>
+    <td><i class="bi bi-trash"></i></td>
+    </tr>`
+    
 }
+
