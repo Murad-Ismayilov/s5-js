@@ -1,0 +1,16 @@
+.card-img-top {
+    width: 100px;
+    height: 70px;
+    display: block;
+    margin: 20px auto;
+    object-fit: contain;
+}
+
+.card-title {
+font-size: 18px;
+}
+
+
+.card-text {
+font-size: 15px;
+}
