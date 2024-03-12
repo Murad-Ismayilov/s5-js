@@ -5,7 +5,7 @@ async function getMelumatlariGetir() {
     const unvan = "https://fakestoreapi.com/products"
 
     try {
-        const cavab =  await fetch(unvan)
+        const cavab =  await fetch(unvan) //gedir sayta girir (request(istek) gonderir)
         const mehsullar = await cavab.json()
         
 
