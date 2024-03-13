@@ -15,8 +15,8 @@ async function getMelumatlariGetir() {
             <div class="card my-2 p-4" >
                 <img src="${mehsullar[i].image}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">${mehsullar[i].title.slice(0, 40)}</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">${mehsullar[i].title.slice(0, 100)}...</h5>
+                  <p class="card-text">${mehsullar[i].title.slice(0, 40)}...</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
