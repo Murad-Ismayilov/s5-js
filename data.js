@@ -55,9 +55,6 @@ closeIcon.addEventListener("click", menyunuBagla)
 linkIcon.addEventListener("click", linkget)
 
 
-function linkget(){
-    overlayMenyuDivi.style.width="100%"
-}
 
 function linkget(){
     overlayMenyuDivi.classList.add("aktiv")
