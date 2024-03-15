@@ -105,10 +105,20 @@ const closeIcon = document.querySelector(".bi-x-circle")
 const linkIcon = document.querySelector(".bi-whatsapp")
 
 navbarButtonu.addEventListener("click", navbarMenyunuAc)
+
 closeIcon.addEventListener("click", menyunuBagla)
 
 
-linkIcon.addEventListener("click", link)
+linkIcon.addEventListener("click", linkget)
+
+
+function linkget(){
+    overlayMenyuDivi.style.width="100%"
+}
+
+function linkget(){
+    overlayMenyuDivi.classList.add("aktiv")
+}
 
 function navbarMenyunuAc() {
 
