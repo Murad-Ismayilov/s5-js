@@ -98,7 +98,9 @@ async function getMelumatlariGetir() {
 
 const overlayMenyuDivi = document.querySelector(".overlay-menu")
 
+
 const navbarButtonu = document.querySelector(".navbar-toggler-icon")
+
 
 const closeIcon = document.querySelector(".bi-x-circle")
 
