@@ -1,23 +1,71 @@
-.card-img-top {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+.card-img-top {
     width: 100px;
     height: 70px;
     display: block;
     margin: 20px auto;
     object-fit: contain;
+}
 
+.card {
+    height: 300px;
+    display: flex !important;
 }
 
 .card-title {
-
-font-size: 18px;
-
+    font-size: 17px;
 }
 
-
-.card-text {
-    
-font-size: 15px;
-
+.overlay-menu {
+    background-color: #000;
+    opacity: .8;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 1.3s ease-in-out;
 }
 
+.aktiv {
+    width: 100%;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.mobile-nav a {
+    opacity: .7;
+    font-size: 1.6rem;
+    transition: all .5s cubic-bezier(.95,-0.45,.68,1.07);
+    display: inline-flex;
+    min-width: 200px;
+}
+
+.mobile-nav a:hover {
+    transform: translateX(30px) scale(1.1);
+}
+.bi-x-circle {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    color:red;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.bi-whatsapp {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    color:rgb(0, 255, 34);
+    font-size: 38px;
+    cursor: pointer;
+}
