@@ -1,60 +1,3 @@
-// console.log("Salam, Roman")
-// console.log("Salam, Tahir")
-// console.log("Salam, Gunay")
-// // Regular
-// function welcomeUser(istifadeciAdi) {
-//     console.log("Salam, " + istifadeciAdi)
-// }
-
-
-
-// welcomeUser("Gunay") //
-// welcomeUser("Roman")
-// welcomeUser("Huseynrza")
-
-// // Function vs Function expression
-// // Function expression
-// const istifadeciniSalamla = function(userName) {
-//    return "Welcome, " + userName
-// }
-
-// istifadeciniSalamla("Raul")
-
-
-// // Arrow function
-
-
-
-// const istifadeciniSalamlaArrowFunc = (name, surname) =>"Welcome "+ name
-// istifadeciniSalamlaArrowFunc("Meherrem")
-
-
-// //IIFE Immediately Invoked Function Expression
-
-
-// (function s5QrupunuSalamla(ad,soyad){
-//     console.log("Welcome, " + ad +" " +  soyad)
-// }("Meherrem", 'Dadashov'))
-
-
-
-
-
-
-
-
-
-
-// API Application Programming Interface
-
-// Asinxron Sinxron
-
-
-// Hoisting
-
-// multi thread - paralel olaraq f
-// JSON JavaScript Object Notation
-
 const mehsullarinYerlesheceyiYer = document.querySelector("#mehsullar")
 window.addEventListener("load", getMelumatlariGetir)
 
@@ -62,7 +5,7 @@ async function getMelumatlariGetir() {
     const unvan = "https://fakestoreapi.com/products"
 
     try {
-        const cavab =  await fetch(unvan) //gedir sayta girir (request(istek) gonderir)
+        const cavab =  await fetch(unvan)
         const mehsullar = await cavab.json()
         
 
