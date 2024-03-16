@@ -52,14 +52,6 @@ navbarButtonu.addEventListener("click", navbarMenyunuAc)
 closeIcon.addEventListener("click", menyunuBagla)
 
 
-linkIcon.addEventListener("click", linkget)
-
-
-
-function linkget(){
-    overlayMenyuDivi.classList.add("aktiv")
-}
-
 function navbarMenyunuAc() {
 
     overlayMenyuDivi.style.width="100%"
